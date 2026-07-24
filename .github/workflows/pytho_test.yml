@@ -1,0 +1,17 @@
+name: Python Test Workflow
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+    workflow_dispatch
+    
+jobs:
+  Python_Test_Workflow
+    runs-on: windows-latest
+    steps:
+    - name: Test Output
+      run: |
+        dir
+        set
+      shell: cmd
