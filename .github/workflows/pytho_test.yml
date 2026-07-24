@@ -8,7 +8,7 @@ on:
     
 jobs:
   Python_Test_Workflow
-    runs-on: windows-latest
+    runs-on: [ windows-latest ]
     steps:
     - name: Test Output
       run: |
